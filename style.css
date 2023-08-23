@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+.lang-logo{
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+select {
+
+    padding: 5px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.641);
+    border-radius: 4px;
+    background: none;
+    color: white;
+}
+
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email {
+
+    outline: 0;
+    margin: 10px;
+    background: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 4px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+#email {
+    background: none;
+    color: white;
+    border: 0;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 18px;
+    width: 500px;
+    height: 50px;
+
+}
+
+.btn {
+
+    flex: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    color: #fff;
+    background: #db0001;
+}
+
+/* ------------------------------ second section */
+hr {
+    width: 100vw;
+    height: 6px;
+    background-color: rgb(48, 47, 47);
+    border: 1px solid rgb(27, 27, 27);
+}
+
+.feature {
+    padding: 76px 0px;
+    font-size: 22px;
+    /* border: 2px solid red; */
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 176px;
+
+
+}
+
+.column {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+
+}
+
+.column p {
+    margin-top: 16px;
+
+}
+
+.img-column {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-column img {
+    display: block;
+    width: 90%;
+    margin: auto;
+
+}
+
+.feature h2 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.second {
+    padding: 72px 176px;
+}
+
+
+/* ------------------------------------------------------------Frequently Asked Question----------------------------------------------- */
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.content p{
+    word-spacing: 2px;
+    letter-spacing: 0.9px;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email-signup {
+    max-width: 700px;
+    margin: 20px auto 60px;
+
+}
+
+.faq small {
+    font-size: 20px;
+}
+
+/* ---------------------------------footer------------------------------ */
+
+.footer {
+    margin: 0px 174px;
+    /* border-top: 6px solid #333; */
+    color: #777;
+    padding: 60px 0px;
+}
+
+
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+
+
+/* using grid */
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #FFFFFFB3;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 26px;
+    grid-row-gap: 44px;
+    box-sizing: border-box;
+    list-style-type: none;
+    line-height: 1.3125rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+   
+}
+.parent{
+    height: 200px;
+     /* border: 2px solid red; */
+}
+
+.parent ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 10px;
+    padding: 12px 0px;
+    /* background-color: pink; */
+}
+.parent ul li{
+    width: 350px;
+    list-style: none;
+   
+    
+}
+.foot-con a{
+    color: #FFFFFFB3;
+    font-size: 14px;
+}
+#language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copy-right-text{
+
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* -----------------------------css media quiries */
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    nav select{
+        padding:5px 10px ;
+    }
+}
